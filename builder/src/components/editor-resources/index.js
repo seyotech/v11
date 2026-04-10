@@ -1,7 +1,6 @@
 import list from './list';
 import attrEditResources from './attr-edit-resources';
 import styleEditResource from './style-edit-resources';
-import animEditResources from './anim-edit-resources';
 import wrapperEditResources from './wrapper-edit-resources';
 import settingsEditResources from './settings-edit-resources';
 import basePropEditResources from './base-prop-edit-resources';
@@ -48,8 +47,6 @@ const editorResources = {
     emptyDataStyles,
     attr: attrEditResources,
     style: styleEditResource,
-    ...basePropEditResources,
-    animation: animEditResources,
     wrapper: wrapperEditResources,
     settings: settingsEditResources,
 };

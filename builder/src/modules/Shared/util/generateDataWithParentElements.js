@@ -19,12 +19,6 @@ export const generateDataWithParentElements = ({ dragData, dragType }) => {
         }
 
         case DND_TYPES.ROW:
-        case DND_TYPES.CMS_ROW: {
-            const section = new CreateSection();
-            dragData && section.content.push(dragData);
-
-            return section;
-        }
         case DND_TYPES.COLUMN: {
             const section = new CreateSection();
             const row = new CreateRow({});

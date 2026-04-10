@@ -6,11 +6,10 @@ import { forwardRef, memo, useCallback, useContext } from 'react';
 /*****************************************************
  * Locals
  ******************************************************/
-import { BuilderContext } from 'contexts/BuilderContext';
 import { t } from 'i18next';
 import { getResponsiveValue } from 'modules/Shared/util/getConditionalPathAndValue';
 import { prefix } from '../config';
-import { DND_TYPES, UNLINK_GLOBAL_ELEMENT } from '../constants';
+import { DND_TYPES } from '../constants';
 import { ElementContext } from '../contexts/ElementRenderContext';
 import GenerateTextComp from './AdvanceComponents/GenerateTextComp';
 import {
@@ -20,7 +19,6 @@ import {
     FooterControls,
 } from './ElementControl.stc';
 import Tooltip from './Tooltip';
-import { DnDElementContext } from 'modules/CanvasElementRenderer/context/DnDElementContext';
 
 const getNumericAddress = (address) => Number(address.split('.').join(''));
 
@@ -175,21 +173,17 @@ function getControlStyle(props) {
         whiteSpace: 'nowrap',
         transition: 'all 0.3s',
         zIndex: 1000 + props.layer,
-
-        // color: props.color.fg,
-        // background: props.color.bg,
         ...getControlTypeStyle(props),
     };
 }
 
 const ElementControl = (props) => {
     const { display } = useContext(ElementContext);
-    const { item, color, address, isSymbol, className, connectDragSource } =
+    const { item, color, address, className, connectDragSource } =
         props;
 
-    const { showAddModal, onClickSettings, showSettingsModal, onRemove } =
+    const { showAddModal, onClickSettings, onRemove } =
         useContext(ElementContext);
-    const { isAIGenerated } = useContext(BuilderContext);
 
     const handleRemove = useCallback(
         (event) => {
@@ -197,14 +191,6 @@ const ElementControl = (props) => {
             onRemove(address);
         },
         [address, onRemove]
-    );
-
-    const showUnlinkSymbolModal = useCallback(
-        (event) => {
-            event.preventDefault();
-            showSettingsModal(UNLINK_GLOBAL_ELEMENT, address);
-        },
-        [address, showSettingsModal]
     );
 
     const handleOnClickEdit = useCallback(
@@ -358,25 +344,6 @@ const ElementControl = (props) => {
                         <GenerateTextComp address={address} item={item} />
                     )}
                 </ControlGroup>
-                {shouldRender.symbol(isSymbol) && (
-                    <ControlGroup style={{ marginLeft: 8 }} color={color}>
-                        <Tooltip
-                            data-test="tooltip"
-                            effect="hover"
-                            placement={tooltipPlacement}
-                            content={t('Unlink Symbol Element')}
-                        >
-                            <ActionButton
-                                size="xs"
-                                type="none"
-                                color={color}
-                                icon={['far', 'globe']}
-                                onClick={showUnlinkSymbolModal}
-                                className={`${prefix}-element-control__action-btn`}
-                            />
-                        </Tooltip>
-                    </ControlGroup>
-                )}
             </Controls>
             {shouldRender.addColumn(item) && (
                 <Controls

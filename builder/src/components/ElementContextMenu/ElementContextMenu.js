@@ -1,7 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useContext } from 'react';
-import { BuilderContext } from '../../contexts/BuilderContext';
-import { usePersistedAISection } from '../../modules/AISections/usePersistSection';
 
 import { RENAME_ELEMENT } from '../../constants';
 import {
@@ -13,9 +11,6 @@ import useCmsRow from '../../hooks/useCmsRow/index';
 import useLocalStorage from '../../hooks/useLocalStorage';
 import {
     COMPONENT_SETTINGS,
-    SAVE_AI_SECTION,
-    SAVE_TO_COLLECTION,
-    UNLINK_GLOBAL_ELEMENT,
 } from '../../util/constant';
 import SaveGlobalModal from '../ElementControls/SaveGlobalModal';
 import Portal from '../Portal';
@@ -103,10 +98,6 @@ function MenuPortal({
     hideContextMenu,
 }) {
     const { getItem, setItem } = useLocalStorage();
-    const { siteId, user = {}, appName } = useContext(BuilderContext);
-    const isAdmin = ['sys_admin', 'sys_reviewer'].includes(user.role);
-
-    const { aiSections = {} } = usePersistedAISection(siteId);
 
     const isSymbol = !!elementContext.symbolId;
     const {
@@ -147,11 +138,6 @@ function MenuPortal({
         return pasteElementStyleByAddress(getItem('style'));
     };
 
-    const isAIsectionEnabled = isAdmin && data._elType === 'SECTION';
-
-    const isAISection = aiSections[data?.id];
-    const text = isAISection ? 'Update AI Section' : 'Save AI Section';
-
     return (
         <Portal>
             <Menu ref={ref}>
@@ -177,53 +163,6 @@ function MenuPortal({
                     <FontAwesomeIcon icon={['far', 'clone']} />
                     <span>{t('Duplicate')}</span>
                 </MenuItem>
-                {!isSymbol && (
-                    <MenuItem
-                        disable={isDisable('saveToCollection')}
-                        onClick={
-                            isDisable('saveToCollection')
-                                ? null
-                                : () => onClickContextMenu(SAVE_TO_COLLECTION)
-                        }
-                    >
-                        <FontAwesomeIcon icon={['far', 'save']} />
-                        <span>{t('Save to Collection')}</span>
-                    </MenuItem>
-                )}
-                {isAIsectionEnabled && (
-                    <MenuItem
-                        onClick={() => onClickContextMenu(SAVE_AI_SECTION)}
-                    >
-                        <FontAwesomeIcon icon={['fa', 'magic']} />
-                        <span>{t(text)}</span>
-                    </MenuItem>
-                )}
-                {isSymbol ? (
-                    <MenuItem
-                        disable={isDisable('symbol')}
-                        onClick={
-                            isDisable('symbol')
-                                ? null
-                                : () =>
-                                      onClickContextMenu(UNLINK_GLOBAL_ELEMENT)
-                        }
-                    >
-                        <FontAwesomeIcon icon={['far', 'globe']} />
-                        <span>{t('Unlink Symbol')}</span>
-                    </MenuItem>
-                ) : (
-                    <MenuItem
-                        disable={isDisable('symbol')}
-                        onClick={
-                            isDisable('symbol')
-                                ? null
-                                : () => showModal('LINK_GLOBAL_ELEMENT')
-                        }
-                    >
-                        <FontAwesomeIcon icon={['far', 'globe']} />
-                        <span>{t('Save as Symbol')}</span>
-                    </MenuItem>
-                )}
                 <MenuItem onClick={() => onClickContextMenu(RENAME_ELEMENT)}>
                     <FontAwesomeIcon icon={['fas', 'pen']} />
                     <span>{t('Rename')}</span>

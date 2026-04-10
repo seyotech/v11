@@ -11,10 +11,6 @@ const emptyCMSRowCol = {
     component: 'EmptyCmsRowCol',
 };
 
-const GlobalSymbol = {
-    component: 'GlobalSymbol',
-};
-
 const providedSections = {
     hasDropdown: true,
     component: 'LibraryView',
@@ -72,12 +68,6 @@ const SECTION = [
         ],
     },
     {
-        title: 'Section Symbols',
-        icon: ['far', 'hdd'],
-        renderType: 'SECTION',
-        body: [{ ...GlobalSymbol, title: 'Your Section Symbols' }],
-    },
-    {
         icon: ['far', 'hdd'],
         title: 'Saved Sections',
         renderType: 'SECTION',
@@ -96,12 +86,6 @@ const ROW = [
         ],
     },
     {
-        title: 'Row Symbols',
-        icon: ['far', 'hdd'],
-        renderType: 'SECTION',
-        body: [{ ...GlobalSymbol, title: 'Your Row Symbols' }],
-    },
-    {
         title: 'Saved Rows',
         icon: ['far', 'hdd'],
         renderType: 'SECTION',
@@ -115,12 +99,6 @@ const COLUMN = [
         title: 'Custom Column',
         renderType: 'SECTION',
         body: [{ ...emptyRowCol, title: 'Regular Columns' }],
-    },
-    {
-        title: 'Column Symbols',
-        icon: ['far', 'hdd'],
-        renderType: 'SECTION',
-        body: [{ ...GlobalSymbol, title: 'Your Column Symbols' }],
     },
     {
         title: 'Saved Column',
@@ -222,17 +200,6 @@ const modalLibrary = {
                     elements: [
                         ELEMENTS.button,
                     ],
-                },
-            ],
-        },
-        {
-            title: 'Element Symbols',
-            icon: ['far', 'hdd'],
-            renderType: 'SECTION',
-            body: [
-                {
-                    ...GlobalSymbol,
-                    title: 'Your Element Symbols',
                 },
             ],
         },

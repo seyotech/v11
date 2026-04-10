@@ -34,11 +34,8 @@ import {
 } from './contexts/ElementRenderContext';
 import SideBar from './modules/SideBar/SideBar';
 import {
-    AI_SECTIONS,
     editorType,
-    SAVE_AI_SECTION,
     SAVE_TO_COLLECTION,
-    UNLINK_GLOBAL_ELEMENT,
 } from './util/constant';
 
 /*****************************************************
@@ -98,14 +95,10 @@ import deepCopy from './util/deepCopy';
 /*****************************************************
  * UTILITIES
  ******************************************************/
-
-import { AI } from 'modules/AI/components/AI';
-import { AIContextProvider } from 'modules/AI/context/AIContext';
 import { SettingModal } from 'modules/setting-components/core/Modals/components';
 import { AddElement } from 'modules/setting-components/core/Modals/components/AddElement';
 import { Overlay } from 'modules/Shared/Overlay';
 import { generateContainers } from 'util/container';
-import SavedAISections from './modules/AISections';
 import SaveAISectionModal from './modules/AISections/SaveAISectionModal';
 import { Drawer } from './modules/Drawer/index';
 import { onDrop } from './util/dndHelpers';
@@ -2175,15 +2168,10 @@ class Builder extends React.Component {
     };
 
     handleSaveData = (isNotify = true) => {
-        // TODO: set hasModifiedGlobal = false after successful save
         const { global, symbols, pagesRef, hasModifiedGlobal } = this.state;
         const pages = this.getModifiedPages();
         const { save, isSaving, handleUpdateGlobalStyle } = this.context;
         if (isSaving) return;
-        // const { siteId, pageId, history, dispatch, authUser, templateId } =
-        //     this.props;
-        // if (!authUser) return;
-        // this.setState({ isSaving: true });
         const data = hasModifiedGlobal
             ? { ...global, pagesRef: Array.from(pagesRef), symbols }
             : null;
@@ -2211,7 +2199,7 @@ class Builder extends React.Component {
 
     previewSite = () => {
         const { site, page } = this.props;
-        const { isSaved, appName } = this.context;
+        const { appName } = this.context;
         const siteId = site.id;
         const pageId = page?.id;
         const prefix = window.location.pathname.startsWith('/v4') ? '/v4' : '';
@@ -2345,12 +2333,10 @@ class Builder extends React.Component {
         const {
             elRef,
             symbols,
-            global,
             history,
             addElType,
             editPageIndex,
             editAddress,
-            aiLoadingState,
             previewMapper,
             settingsModal,
             currentEditItem,
@@ -2358,14 +2344,9 @@ class Builder extends React.Component {
             contextMenuPosition,
             settingsModalTriggerFrom,
         } = this.state;
-        const { site, location, Link, authUser = true } = this.props;
-
-        const homepageId = site.pages?.find(
-            (page) => page.pageType === 'HOMEPAGE' || page.type === 'INDEX'
-        )?.id;
 
         const editPage = this.getEditPage();
-        const { siteId, isPublishing, isSaved } = this.context;
+        const { siteId } = this.context;
 
         const { data } = editPage;
         const singleTemplatePageSlug =
@@ -2393,10 +2374,6 @@ class Builder extends React.Component {
                 : editPage.slug;
             return !slug || slug === 'index' ? `${root}` : `${root}/${slug}`;
         };
-
-        // if (siteId && !authUser) {
-        //     return <Redirect to="/login" />;
-        // }
 
         const handlePublishedSitePreview = () => {
             const { permission, dorikAppURL } = this.context;
@@ -2430,20 +2407,6 @@ class Builder extends React.Component {
 
         const EditorLayout = SettingModal;
 
-        const { isAIGenerated, handleUploadMedia, aiFetcher } = this.context;
-
-        const aiCtx = {
-            global,
-            aiFetcher,
-            aiLoadingState,
-            handleUploadMedia,
-            setPageMeta: this.setPageMeta,
-            backgroundSave: this.aiAutoSave,
-            editPage: this.getEditPage().data,
-            setAILoadingState: this.setAILoadingState,
-            handleAddOrUpdateSections: this.handleAddOrUpdateSections,
-        };
-
         const addElementInfo = (() => {
             if (!editAddress || !addElType) return;
 
@@ -2473,7 +2436,6 @@ class Builder extends React.Component {
                 <Helmet>
                     <title>{pageTitle || 'Untitled'} | Dorik Builder</title>
                 </Helmet>
-                <AIContextProvider ctx={aiCtx}>
                     <ElementContextProvider
                         value={{
                             ...this.elementContextMethods,
@@ -2504,9 +2466,7 @@ class Builder extends React.Component {
                         }}
                     >
                         <EditorContextProvider value={this.stateToContext}>
-                            {isAIGenerated && <AI />}
                             <StreamingOverlay />
-
                             <DndProvider backend={HTML5Backend}>
                                 <Layout style={{ minHeight: '100vh' }}>
                                     <SideBar
@@ -2692,66 +2652,12 @@ class Builder extends React.Component {
                             onClose={this.hideSettingsModal}
                             visible={settingsModal === SAVE_TO_COLLECTION}
                         />
-                        {settingsModal === SAVE_AI_SECTION && (
-                            <SaveAISectionModal
-                                data={currentEditItem}
-                                onClose={this.hideSettingsModal}
-                                visible={settingsModal === SAVE_AI_SECTION}
-                            />
-                        )}
-                        {settingsModal === AI_SECTIONS && (
-                            <SavedAISections
-                                type={addElType}
-                                page={this.getEditPage()}
-                                onClose={this.hideSettingsModal}
-                                editAddress={editAddress}
-                                visible={settingsModal === AI_SECTIONS}
-                            />
-                        )}
-
-                        <RemoveGlobalModal
-                            unlink={this.unlinkSymbol}
-                            close={this.cleanUpElementEditMode}
-                            visible={settingsModal === UNLINK_GLOBAL_ELEMENT}
-                        />
-                        {settingsModal === RENAME_ELEMENT && (
-                            <RenameElementModal
-                                data={currentEditItem}
-                                close={this.cleanUpElementEditMode}
-                                onSave={this.handleSaveSettings}
-                                visible={settingsModal === RENAME_ELEMENT}
-                            />
-                        )}
                     </ElementContextProvider>
-                </AIContextProvider>
                 <BuilderStyles />
                 <KeyBinding />
             </>
         );
     }
-
-    // renderSaveButton() {
-    //     const { isSaving, isSaved } = this.context;
-    //     if (isSaving) {
-    //         return (
-    //             <>
-    //                 <FontAwesomeIcon spin icon={['fal', 'spinner']} /> Saving
-    //             </>
-    //         );
-    //     } else if (isSaved) {
-    //         return (
-    //             <>
-    //                 <FontAwesomeIcon icon={['fal', 'check']} /> Saved
-    //             </>
-    //         );
-    //     } else {
-    //         return (
-    //             <>
-    //                 <FontAwesomeIcon icon={['fal', 'save']} /> Save
-    //             </>
-    //         );
-    //     }
-    // }
 }
 
 Builder.propTypes = {
