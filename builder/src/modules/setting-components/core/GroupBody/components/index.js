@@ -1,0 +1,1 @@
+export { GroupBody } from './GroupBody';

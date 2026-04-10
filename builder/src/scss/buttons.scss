@@ -1,0 +1,47 @@
+@import './variable.scss';
+
+.btn {
+    cursor: pointer;
+    font-weight: 500;
+    border: 1px solid;
+    border-radius: 5px;
+    transition: all 0.3s;
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    &-1x {
+        height: 40px;
+        font-size: 16px;
+        padding: 5px 20px;
+    }
+
+    &-2x {
+        height: 50px;
+        font-size: 18px;
+        padding: 5px 20px;
+    }
+
+    &-primary {
+        color: #fff;
+        background: #3a30ba;
+        border-color: #3a30ba;
+        &:hover {
+            background: #065be2;
+            border-color: #065be2;
+        }
+    }
+
+    &-primary-alt {
+        color: #3a30ba;
+        background: #fff;
+        border-color: #3a30ba;
+        &:hover {
+            color: #fff;
+            background: #0062ff;
+            border-color: #0062ff;
+        }
+    }
+}

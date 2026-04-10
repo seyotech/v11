@@ -1,0 +1,113 @@
+// WIDTH/HEIGHT
+$height: 26px;
+$thumb-height: 12px;
+$track-height: 4px;
+
+// COLORS
+$upper-color: #cfcfcf;
+$lower-color: #0199ff;
+$thumb-color: #0199ff;
+$thumb-hover-color: #55c2ff;
+$upper-background: linear-gradient(to bottom, $upper-color, $upper-color) 100% 50% / 100% $track-height no-repeat transparent;
+$lower-background: linear-gradient(to bottom, $lower-color, $lower-color) 100% 50% / 100% $track-height no-repeat transparent;
+
+@function webkit-slider-thumb-shadow($i: 1) {
+    $val: #{$i}px 0 0 -#{($thumb-height - $track-height) / 2} #{$upper-color};
+
+    @if $i ==1 {
+        @for $k from 2 through 1000 {
+            $val: #{$val},
+            webkit-slider-thumb-shadow($k);
+        }
+    }
+
+    @return $val;
+}
+
+.--dorik--slider-component input {
+    display: block;
+    appearance: none;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(100% - 20px);
+    overflow: hidden;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::-webkit-slider-runnable-track {
+        width: 100%;
+        height: $height;
+        background: $lower-background;
+    }
+
+    // Webkit
+    &::-webkit-slider-thumb {
+        position: relative;
+        appearance: none;
+        height: $thumb-height;
+        width: $thumb-height;
+        background: $thumb-color;
+        border-radius: 100%;
+        border: 0;
+        top: 50%;
+        margin-top: (-$thumb-height/2);
+        box-shadow: webkit-slider-thumb-shadow();
+        transition: background-color 150ms;
+    }
+
+    // Firefox
+    &::-moz-range-track,
+    &::-moz-range-progress {
+        width: 100%;
+        height: $height;
+        background: $upper-background;
+    }
+
+    &::-moz-range-progress {
+        background: $lower-background;
+    }
+
+    &::-moz-range-thumb {
+        appearance: none;
+        margin: 0;
+        height: $thumb-height;
+        width: $thumb-height;
+        background: $thumb-color;
+        border-radius: 100%;
+        border: 0;
+        transition: background-color 150ms;
+    }
+
+    // Internet Exploder
+    &::-ms-track {
+        border: 0;
+        color: transparent;
+        background: transparent;
+    }
+
+    &::-ms-fill-lower {
+        background: $lower-background;
+    }
+
+    &::-ms-fill-upper {
+        background: $upper-background;
+    }
+
+    &::-ms-thumb {
+        appearance: none;
+        height: $thumb-height;
+        width: $thumb-height;
+        background: $thumb-color;
+        border-radius: 100%;
+        border: 0;
+        transition: background-color 150ms;
+        top: 0;
+        margin: 0;
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,1 @@
+export { eraserPlugin } from './Eraser';

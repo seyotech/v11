@@ -1,0 +1,26 @@
+const columns = [
+    { selector: '1/1', size: 100 },
+    { selector: '1/2', size: 50 },
+    { selector: '1/3', size: 33.33333333333333 },
+    { selector: '2/3', size: 66.66666666666666 },
+    { selector: '1/4', size: 25 },
+    { selector: '3/4', size: 75 },
+    { selector: '1/5', size: 20 },
+    { selector: '2/5', size: 40 },
+    { selector: '3/5', size: 60 },
+    { selector: '4/5', size: 80 },
+    { selector: '1/6', size: 16.666666666666664 },
+    { selector: '5/6', size: 83.33333333333334 },
+    { selector: '1/7', size: 14.285714285714285 },
+    { selector: '2/7', size: 28.57142857142857 },
+    { selector: '3/7', size: 42.857142857142854 },
+    { selector: '4/7', size: 57.14285714285714 },
+    { selector: '5/7', size: 71.42857142857143 },
+    { selector: '6/7', size: 85.71428571428571 },
+    { selector: '1/8', size: 12.5 },
+    { selector: '3/8', size: 37.5 },
+    { selector: '5/8', size: 62.5 },
+    { selector: '7/8', size: 87.5 },
+];
+
+export default columns;

@@ -1,0 +1,25 @@
+@function getSpacingProp($key) {
+    $prop: "margin-top";
+    @if $key == "mb" {
+        $prop: "margin-bottom";
+    } @else if $key == "mt" {
+        $prop: "margin-top";
+    } @else if $key == "mr" {
+        $prop: "margin-right";
+    } @else if $key == "ml" {
+        $prop: "margin-left";
+    } @else if $key == "pt" {
+        $prop: "padding-top";
+    } @else if $key == "pb" {
+        $prop: "padding-bottom";
+    } @else if $key == "pr" {
+        $prop: "padding-right";
+    } @else if $key == "pl" {
+        $prop: "padding-left";
+    }
+    @return $prop;
+}
+
+@mixin whiteSpace($key, $value, $unit) {
+    #{getSpacingProp($key)}: #{$value}#{$unit};
+}

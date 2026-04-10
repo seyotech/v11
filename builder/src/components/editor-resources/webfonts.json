@@ -1,0 +1,1542 @@
+[
+    {
+        "family": "Tangerine",
+        "provider": "googlefont",
+        "variants": ["400", "700"],
+        "category": "cursive",
+        "kind": "webfonts#webfont"
+    },
+    {
+        "family": "Trispace",
+        "provider": "googlefont",
+        "variants": ["100", "200", "300", "400", "500", "600", "700", "800"],
+        "category": "sans-serif",
+        "kind": "webfonts#webfont"
+    },
+    {
+        "provider": "googlefont",
+        "family": "Manrope",
+        "variants": ["200", "300", "400", "500", "600", "700", "800"],
+        "lastModified": "2020-06-25",
+        "category": "sans-serif",
+        "kind": "webfonts#webfont"
+    },
+    {
+        "provider": "googlefont",
+        "family": "Literata",
+        "variants": [
+            "400",
+            "500",
+            "600",
+            "700",
+            "italic",
+            "500italic",
+            "600italic",
+            "700italic"
+        ],
+        "category": "serif",
+        "kind": "webfonts#webfont"
+    },
+    {
+        "provider": "googlefont",
+        "family": "Lovers Quarrel",
+        "variants": ["400"],
+        "lastModified": "2020-07-23",
+        "category": "handwriting",
+        "kind": "webfonts#webfont"
+    },
+    {
+        "provider": "googlefont",
+        "family": "Almarai",
+        "variants": ["300", "400", "700", "800"],
+        "lastModified": "2020-03-03",
+        "category": "sans-serif",
+        "kind": "webfonts#webfont"
+    },
+    {
+        "provider": "googlefont",
+        "family": "Rubik Mono One",
+        "variants": ["400"],
+        "lastModified": "2019-07-16",
+        "category": "sans-serif",
+        "kind": "webfonts#webfont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Inter",
+        "category": "sans-serif",
+        "variants": [
+            "100",
+            "200",
+            "300",
+            "400",
+            "500",
+            "600",
+            "700",
+            "800",
+            "900"
+        ],
+        "provider": "googlefont",
+        "lastModified": "2020-03-06"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Roboto",
+        "category": "sans-serif",
+        "variants": [
+            "100",
+            "100italic",
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "500",
+            "500italic",
+            "700",
+            "700italic",
+            "900",
+            "900italic"
+        ],
+        "lastModified": "2019-07-24",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Open Sans",
+        "category": "sans-serif",
+        "variants": [
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic",
+            "800",
+            "800italic"
+        ],
+        "lastModified": "2019-07-23",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Lato",
+        "category": "sans-serif",
+        "variants": [
+            "100",
+            "100italic",
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "700",
+            "700italic",
+            "900",
+            "900italic"
+        ],
+        "lastModified": "2019-07-23",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Montserrat",
+        "category": "sans-serif",
+        "variants": [
+            "100",
+            "100italic",
+            "200",
+            "200italic",
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "500",
+            "500italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic",
+            "800",
+            "800italic",
+            "900",
+            "900italic"
+        ],
+        "lastModified": "2019-07-23",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Roboto Condensed",
+        "category": "sans-serif",
+        "variants": ["300", "300italic", "400", "italic", "700", "700italic"],
+        "lastModified": "2019-07-23",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Source Sans Pro",
+        "category": "sans-serif",
+        "variants": [
+            "200",
+            "200italic",
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic",
+            "900",
+            "900italic"
+        ],
+        "lastModified": "2019-07-23",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Oswald",
+        "category": "sans-serif",
+        "variants": ["200", "300", "400", "500", "600", "700"],
+        "lastModified": "2019-10-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Raleway",
+        "category": "sans-serif",
+        "variants": [
+            "100",
+            "100italic",
+            "200",
+            "200italic",
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "500",
+            "500italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic",
+            "800",
+            "800italic",
+            "900",
+            "900italic"
+        ],
+        "lastModified": "2019-07-23",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Roboto Mono",
+        "category": "monospace",
+        "variants": [
+            "100",
+            "100italic",
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "500",
+            "500italic",
+            "700",
+            "700italic"
+        ],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Poppins",
+        "category": "sans-serif",
+        "variants": [
+            "100",
+            "100italic",
+            "200",
+            "200italic",
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "500",
+            "500italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic",
+            "800",
+            "800italic",
+            "900",
+            "900italic"
+        ],
+        "lastModified": "2019-10-15",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Noto Sans",
+        "category": "sans-serif",
+        "variants": ["400", "italic", "700", "700italic"],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Merriweather",
+        "category": "serif",
+        "variants": [
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "700",
+            "700italic",
+            "900",
+            "900italic"
+        ],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Roboto Slab",
+        "category": "serif",
+        "variants": [
+            "100",
+            "200",
+            "300",
+            "400",
+            "500",
+            "600",
+            "700",
+            "800",
+            "900"
+        ],
+        "lastModified": "2019-11-14",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "PT Sans",
+        "category": "sans-serif",
+        "variants": ["400", "italic", "700", "700italic"],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Ubuntu",
+        "category": "sans-serif",
+        "variants": [
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "500",
+            "500italic",
+            "700",
+            "700italic"
+        ],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Playfair Display",
+        "category": "serif",
+        "variants": ["400", "italic", "700", "700italic", "900", "900italic"],
+        "lastModified": "2019-12-05",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Open Sans Condensed",
+        "category": "sans-serif",
+        "variants": ["300", "300italic", "700"],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Muli",
+        "category": "sans-serif",
+        "variants": [
+            "200",
+            "300",
+            "400",
+            "500",
+            "600",
+            "700",
+            "800",
+            "900",
+            "200italic",
+            "300italic",
+            "italic",
+            "500italic",
+            "600italic",
+            "700italic",
+            "800italic",
+            "900italic"
+        ],
+        "lastModified": "2019-12-05",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "PT Serif",
+        "category": "serif",
+        "variants": ["400", "italic", "700", "700italic"],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Lora",
+        "category": "serif",
+        "variants": ["400", "italic", "700", "700italic"],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Nunito",
+        "category": "sans-serif",
+        "variants": [
+            "200",
+            "200italic",
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic",
+            "800",
+            "800italic",
+            "900",
+            "900italic"
+        ],
+        "lastModified": "2019-11-14",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Slabo 27px",
+        "category": "serif",
+        "variants": ["400"],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Titillium Web",
+        "category": "sans-serif",
+        "variants": [
+            "200",
+            "200italic",
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic",
+            "900"
+        ],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Rubik",
+        "category": "sans-serif",
+        "variants": [
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "500",
+            "500italic",
+            "700",
+            "700italic",
+            "900",
+            "900italic"
+        ],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Nanum Gothic",
+        "category": "sans-serif",
+        "variants": ["400", "700", "800"],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Work Sans",
+        "category": "sans-serif",
+        "variants": [
+            "100",
+            "200",
+            "300",
+            "400",
+            "500",
+            "600",
+            "700",
+            "800",
+            "900"
+        ],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Fira Sans",
+        "category": "sans-serif",
+        "variants": [
+            "100",
+            "100italic",
+            "200",
+            "200italic",
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "500",
+            "500italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic",
+            "800",
+            "800italic",
+            "900",
+            "900italic"
+        ],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Noto Serif",
+        "category": "serif",
+        "variants": ["400", "italic", "700", "700italic"],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Quicksand",
+        "category": "sans-serif",
+        "variants": ["300", "400", "500", "600", "700"],
+        "lastModified": "2019-10-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "PT Sans Narrow",
+        "category": "sans-serif",
+        "variants": ["400", "700"],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Arimo",
+        "category": "sans-serif",
+        "variants": ["400", "italic", "700", "700italic"],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Noto Sans KR",
+        "category": "sans-serif",
+        "variants": ["100", "300", "400", "500", "700", "900"],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Noto Sans JP",
+        "category": "sans-serif",
+        "variants": ["100", "300", "400", "500", "700", "900"],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Nunito Sans",
+        "category": "sans-serif",
+        "variants": [
+            "200",
+            "200italic",
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic",
+            "800",
+            "800italic",
+            "900",
+            "900italic"
+        ],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Heebo",
+        "category": "sans-serif",
+        "variants": ["100", "300", "400", "500", "700", "800", "900"],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Dosis",
+        "category": "sans-serif",
+        "variants": ["200", "300", "400", "500", "600", "700", "800"],
+        "lastModified": "2019-10-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Oxygen",
+        "category": "sans-serif",
+        "variants": ["300", "400", "700"],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Inconsolata",
+        "category": "monospace",
+        "variants": ["400", "700"],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Libre Baskerville",
+        "category": "serif",
+        "variants": ["400", "italic", "700"],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Josefin Sans",
+        "category": "sans-serif",
+        "variants": [
+            "100",
+            "100italic",
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic"
+        ],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Varela Round",
+        "category": "sans-serif",
+        "variants": ["400"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Yanone Kaffeesatz",
+        "category": "sans-serif",
+        "variants": ["200", "300", "400", "500", "600", "700"],
+        "lastModified": "2019-12-05",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Noto Sans TC",
+        "category": "sans-serif",
+        "variants": ["100", "300", "400", "500", "700", "900"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Anton",
+        "category": "sans-serif",
+        "variants": ["400"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Karla",
+        "category": "sans-serif",
+        "variants": ["400", "italic", "700", "700italic"],
+        "lastModified": "2019-12-08",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Cabin",
+        "category": "sans-serif",
+        "variants": [
+            "400",
+            "italic",
+            "500",
+            "500italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic"
+        ],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Libre Franklin",
+        "category": "sans-serif",
+        "variants": [
+            "100",
+            "100italic",
+            "200",
+            "200italic",
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "500",
+            "500italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic",
+            "800",
+            "800italic",
+            "900",
+            "900italic"
+        ],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Barlow",
+        "category": "sans-serif",
+        "variants": [
+            "100",
+            "100italic",
+            "200",
+            "200italic",
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "500",
+            "500italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic",
+            "800",
+            "800italic",
+            "900",
+            "900italic"
+        ],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Crimson Text",
+        "category": "serif",
+        "variants": ["400", "italic", "600", "600italic", "700", "700italic"],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Bitter",
+        "category": "serif",
+        "variants": ["400", "italic", "700"],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Lobster",
+        "category": "display",
+        "variants": ["400"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Hind",
+        "category": "sans-serif",
+        "variants": ["300", "400", "500", "600", "700"],
+        "lastModified": "2019-07-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Fjalla One",
+        "category": "sans-serif",
+        "variants": ["400"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Abel",
+        "category": "sans-serif",
+        "variants": ["400"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Catamaran",
+        "category": "sans-serif",
+        "variants": [
+            "100",
+            "200",
+            "300",
+            "400",
+            "500",
+            "600",
+            "700",
+            "800",
+            "900"
+        ],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Dancing Script",
+        "category": "handwriting",
+        "variants": ["400", "500", "600", "700"],
+        "lastModified": "2019-11-20",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Mukta",
+        "category": "sans-serif",
+        "variants": ["200", "300", "400", "500", "600", "700", "800"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Indie Flower",
+        "category": "handwriting",
+        "variants": ["400"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Pacifico",
+        "category": "handwriting",
+        "variants": ["400"],
+        "lastModified": "2019-09-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Exo 2",
+        "category": "sans-serif",
+        "variants": [
+            "100",
+            "100italic",
+            "200",
+            "200italic",
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "500",
+            "500italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic",
+            "800",
+            "800italic",
+            "900",
+            "900italic"
+        ],
+        "lastModified": "2019-09-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Arvo",
+        "category": "serif",
+        "variants": ["400", "italic", "700", "700italic"],
+        "lastModified": "2019-07-26",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Source Serif Pro",
+        "category": "serif",
+        "variants": ["400", "600", "700"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Teko",
+        "category": "sans-serif",
+        "variants": ["300", "400", "500", "600", "700"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Merriweather Sans",
+        "category": "sans-serif",
+        "variants": [
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "700",
+            "700italic",
+            "800",
+            "800italic"
+        ],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Kanit",
+        "category": "sans-serif",
+        "variants": [
+            "100",
+            "100italic",
+            "200",
+            "200italic",
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "500",
+            "500italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic",
+            "800",
+            "800italic",
+            "900",
+            "900italic"
+        ],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Barlow Condensed",
+        "category": "sans-serif",
+        "variants": [
+            "100",
+            "100italic",
+            "200",
+            "200italic",
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "500",
+            "500italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic",
+            "800",
+            "800italic",
+            "900",
+            "900italic"
+        ],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "EB Garamond",
+        "category": "serif",
+        "variants": [
+            "400",
+            "500",
+            "600",
+            "700",
+            "800",
+            "italic",
+            "500italic",
+            "600italic",
+            "700italic",
+            "800italic"
+        ],
+        "lastModified": "2019-11-14",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Shadows Into Light",
+        "category": "handwriting",
+        "variants": ["400"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Source Code Pro",
+        "category": "monospace",
+        "variants": [
+            "200",
+            "200italic",
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "500",
+            "500italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic",
+            "900",
+            "900italic"
+        ],
+        "lastModified": "2019-08-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Abril Fatface",
+        "category": "display",
+        "variants": ["400"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Hind Siliguri",
+        "category": "sans-serif",
+        "variants": ["300", "400", "500", "600", "700"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Asap",
+        "category": "sans-serif",
+        "variants": [
+            "400",
+            "italic",
+            "500",
+            "500italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic"
+        ],
+        "lastModified": "2019-07-26",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Bebas Neue",
+        "category": "display",
+        "variants": ["400"],
+        "lastModified": "2019-11-13",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Questrial",
+        "category": "sans-serif",
+        "variants": ["400"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Comfortaa",
+        "category": "display",
+        "variants": ["300", "400", "500", "600", "700"],
+        "lastModified": "2019-10-22",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Archivo Narrow",
+        "category": "sans-serif",
+        "variants": [
+            "400",
+            "italic",
+            "500",
+            "500italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic"
+        ],
+        "lastModified": "2019-07-26",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Bree Serif",
+        "category": "serif",
+        "variants": ["400"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Acme",
+        "category": "sans-serif",
+        "variants": ["400"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Overpass",
+        "category": "sans-serif",
+        "variants": [
+            "100",
+            "100italic",
+            "200",
+            "200italic",
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic",
+            "800",
+            "800italic",
+            "900",
+            "900italic"
+        ],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Amatic SC",
+        "category": "handwriting",
+        "variants": ["400", "700"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Cairo",
+        "category": "sans-serif",
+        "variants": ["200", "300", "400", "600", "700", "900"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Zilla Slab",
+        "category": "serif",
+        "variants": [
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "500",
+            "500italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic"
+        ],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "IBM Plex Sans",
+        "category": "sans-serif",
+        "variants": [
+            "100",
+            "100italic",
+            "200",
+            "200italic",
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "500",
+            "500italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic"
+        ],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Exo",
+        "category": "sans-serif",
+        "variants": [
+            "100",
+            "100italic",
+            "200",
+            "200italic",
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "500",
+            "500italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic",
+            "800",
+            "800italic",
+            "900",
+            "900italic"
+        ],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Maven Pro",
+        "category": "sans-serif",
+        "variants": ["400", "500", "600", "700", "800", "900"],
+        "lastModified": "2019-12-05",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Righteous",
+        "category": "display",
+        "variants": ["400"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Signika",
+        "category": "sans-serif",
+        "variants": ["300", "400", "600", "700"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Domine",
+        "category": "serif",
+        "variants": ["400", "700"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Prompt",
+        "category": "sans-serif",
+        "variants": [
+            "100",
+            "100italic",
+            "200",
+            "200italic",
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "500",
+            "500italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic",
+            "800",
+            "800italic",
+            "900",
+            "900italic"
+        ],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Play",
+        "category": "sans-serif",
+        "variants": ["400", "700"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Fira Sans Condensed",
+        "category": "sans-serif",
+        "variants": [
+            "100",
+            "100italic",
+            "200",
+            "200italic",
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "500",
+            "500italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic",
+            "800",
+            "800italic",
+            "900",
+            "900italic"
+        ],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Baloo Bhai",
+        "category": "display",
+        "variants": ["400"],
+        "lastModified": "2019-07-16",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Assistant",
+        "category": "sans-serif",
+        "variants": ["200", "300", "400", "600", "700", "800"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Monda",
+        "category": "sans-serif",
+        "variants": ["400", "700"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "PT Sans Caption",
+        "category": "sans-serif",
+        "variants": ["400", "700"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Ropa Sans",
+        "category": "sans-serif",
+        "variants": ["400", "italic"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Ubuntu Condensed",
+        "category": "sans-serif",
+        "variants": ["400"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Patua One",
+        "category": "display",
+        "variants": ["400"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Crete Round",
+        "category": "serif",
+        "variants": ["400", "italic"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Rajdhani",
+        "category": "sans-serif",
+        "variants": ["300", "400", "500", "600", "700"],
+        "lastModified": "2019-07-17",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Biryani",
+        "category": "sans-serif",
+        "variants": ["200", "300", "400", "600", "700", "800", "900"],
+        "lastModified": "2019-07-16",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Khula",
+        "category": "sans-serif",
+        "variants": ["300", "400", "600", "700", "800"],
+        "lastModified": "2019-07-16",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Palanquin",
+        "category": "sans-serif",
+        "variants": ["100", "200", "300", "400", "500", "600", "700"],
+        "lastModified": "2019-07-16",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Kodchasan",
+        "category": "sans-serif",
+        "variants": [
+            "200",
+            "200italic",
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "500",
+            "500italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic"
+        ],
+        "lastModified": "2019-11-05",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Mada",
+        "category": "sans-serif",
+        "variants": ["200", "300", "400", "500", "600", "700", "900"],
+        "provider": "googlefont",
+        "lastModified": "2019-07-16"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Red Hat Display",
+        "category": "sans-serif",
+        "variants": [
+            "400",
+            "italic",
+            "500",
+            "500italic",
+            "700",
+            "700italic",
+            "900",
+            "900italic"
+        ],
+        "lastModified": "2019-11-05",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Red Hat Text",
+        "category": "sans-serif",
+        "variants": ["400", "italic", "500", "500italic", "700", "700italic"],
+        "lastModified": "2019-11-05",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "DM Sans",
+        "category": "sans-serif",
+        "variants": ["400", "italic", "500", "500italic", "700", "700italic"],
+        "lastModified": "2019-11-14",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Krub",
+        "category": "sans-serif",
+        "variants": [
+            "200",
+            "200italic",
+            "300",
+            "300italic",
+            "400",
+            "italic",
+            "500",
+            "500italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic"
+        ],
+        "lastModified": "2019-11-05",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Lexend Deca",
+        "category": "sans-serif",
+        "variants": ["400"],
+        "lastModified": "2019-08-14",
+        "provider": "googlefont"
+    },
+    {
+        "kind": "webfonts#webfont",
+        "family": "Thasadith",
+        "category": "sans-serif",
+        "variants": ["400", "italic", "700", "700italic"],
+        "lastModified": "2019-11-05",
+        "provider": "googlefont"
+    },
+    {
+        "provider": "googlefont",
+        "family": "Space Grotesk",
+        "variants": ["200", "300", "400", "500", "600", "700", "800"],
+        "lastModified": "2021-10-06",
+        "category": "sans-serif",
+        "kind": "webfonts#webfont"
+    },
+    {
+        "provider": "googlefont",
+        "family": "Sora",
+        "variants": ["200", "300", "400", "500", "600", "700", "800"],
+        "lastModified": "2020-10-06",
+        "category": "sans-serif",
+        "kind": "webfonts#webfont"
+    }
+]

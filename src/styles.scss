@@ -1,0 +1,26 @@
+/* src/styles.scss */
+@import '@angular/cdk/overlay-prebuilt.css';
+
+.cdk-drag-preview {
+  z-index: 99999 !important; /* Forces preview to stay above iframe */
+  pointer-events: none;       /* Allows mouse signals to pass into the iframe */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+.cdk-drag-animating {
+  transition: none !important;
+}
+
+/* Ensure the preview is visible over the iframe */
+/* src/styles.scss */
+.cdk-drag-preview {
+  z-index: 10000 !important;
+  pointer-events: none !important;
+  background: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+.cdk-drag-placeholder {
+  opacity: 0; /* Hides original element while dragging */
+}

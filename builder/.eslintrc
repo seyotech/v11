@@ -1,0 +1,84 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true,
+        "node": true
+    },
+    "plugins": ["testing-library"],
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:react/jsx-runtime",
+        "plugin:react-hooks/recommended",
+        "plugin:import/recommended",
+        "plugin:testing-library/react",
+        "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "settings": {
+        "import/resolver": {
+            "eslint-import-resolver-custom-alias": {
+                "alias": {
+                    "@": "./src/",
+                    "components": "./src/components",
+                    "constants": "./src/constants",
+                    "contexts": "./src/contexts",
+                    "hoc": "./src/hoc",
+                    "hooks": "./src/hooks",
+                    "libs": "./src/libs",
+                    "modules": "./src/modules",
+                    "scss": "./src/scss",
+                    "util": "./src/util"
+                },
+                "extensions": [".js", ".jsx"],
+                "packages": ["apps/*", "packages/*"]
+            }
+        },
+        "react": {
+            "version": "detect"
+        }
+    },
+    "rules": {
+        "no-unused-vars": "off",
+        "react/prop-types": "off",
+        "no-prototype-builtins": "off",
+        "react/display-name": "off",
+        "no-inner-declarations": "off",
+        "import/no-unresolved": [
+            2,
+            {
+                "commonjs": true,
+                "amd": true,
+                "ignore": [
+                    "\\@dorik/html-parser$",
+                    "\\@dorik/style-generator$",
+                    "\\@dorik/utils$"
+                ]
+            }
+        ],
+        "prettier/prettier": ["error", { "endOfLine": "auto" }],
+        "testing-library/no-debugging-utils": [
+            "warn",
+            {
+                "utilsToCheckFor": {
+                    "debug": false,
+                    "logRoles": true,
+                    "logDOM": true
+                }
+            }
+        ]
+    },
+    "globals": {
+        "vi": true
+    },
+    "overrides": [
+        {
+            "files": ["*.test.js"],
+            "extends": ["plugin:testing-library/react"]
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+export default {
+    activeBgStyle: {
+        visibleOn: ['normal', 'hover'],
+        template: 'Tab',
+        inputType: 'boxed',
+        defaultValue: 'color',
+        label: 'Style',
+        labelPosition: 'inline',
+        options: [
+            { label: 'Color', value: 'color', icon: 'far droplet' },
+        ],
+    },
+    service: {
+        label: 'Service',
+        template: 'Select',
+        options: [
+            { name: 'ActiveCampaign', value: 'ACTIVE_CAMPAIGN' },
+            { name: 'Big Mailer', value: 'BIG_MAILER' },
+            { name: 'Kit', value: 'CONVERT_KIT' },
+            { name: 'EmailOctopus', value: 'EMAIL_OCTOPUS' },
+            { name: 'Get Response', value: 'GET_RESPONSE' },
+            { name: 'Lemlist', value: 'LEM_LIST' },
+            { name: 'MailChimp', value: 'MAIL_CHIMP' },
+            { name: 'Mailjet', value: 'MAIL_JET' },
+            { name: 'MailerLite', value: 'MAILER_LITE' },
+            { name: 'Moosend', value: 'MOO_SEND' },
+            { name: 'SendFox', value: 'SEND_FOX' },
+            { name: 'Sendinblue', value: 'SEND_IN_BLUE' },
+        ],
+    },
+    hideOn: {
+        label: 'Hide On',
+        template: 'Select',
+        labelPosition: 'inline',
+        options: [
+            { name: 'None', value: '' },
+            { name: 'Mobile', value: 'mobile' },
+            { name: 'Mobile & Tablet', value: 'mobile+tablet' },
+            { name: 'Mobile & Desktop', value: 'mobile+desktop' },
+            { name: 'Tablet', value: 'tablet' },
+            { name: 'Tablet & Desktop', value: 'tablet+desktop' },
+            { name: 'Desktop', value: 'desktop' },
+        ],
+    },
+};

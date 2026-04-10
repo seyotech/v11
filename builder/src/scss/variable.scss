@@ -1,0 +1,42 @@
+$prefix: 'dorik';
+$prefix_bcs: 'dorik-bcs';
+$prefix_ecs: 'dorik-ecs';
+$theme_color: #3a30ba;
+$body_text: #464a53;
+$title_text: #171a21;
+$borderPaleGrey: #e5ebf0;
+$color-primary: #3a30ba;
+
+$xs: 0;
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+
+$min_xs: 0px;
+$max_xs: 639px;
+$min_sm: 640px;
+$max_sm: 767px;
+$min_md: 768px;
+$max_md: 1023px;
+$min_lg: 1024px;
+$max_lg: 1279px;
+
+$whiteSpaceList: (
+        mr: 5,
+    ),
+    (
+        mb: 15,
+    ),
+    (
+        mb: 40,
+    ),
+    (
+        mb: 30,
+    ),
+    (
+        mt: 0,
+    ),
+    (
+        mt: 25,
+    );

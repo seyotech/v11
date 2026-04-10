@@ -1,0 +1,15 @@
+.modal {
+    top: 0;
+    left: 0;
+    width: 100%;
+    // height: 100%;
+}
+
+@keyframes sidebarAnimation {
+    0% {
+        background: var(--color-info-600);
+    }
+    100% {
+        background: #f4f6f9;
+    }
+}

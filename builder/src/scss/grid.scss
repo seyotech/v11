@@ -1,0 +1,104 @@
+@import './variable';
+
+// total grids
+$total: 8;
+/*****************************************************
+* DORIK GRID SYSTEM
+******************************************************/
+.container-fluid {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 100%;
+
+    @media screen and (min-width: $sm) {
+        width: 540px;
+    }
+    @media screen and (min-width: $md) {
+        width: 750px;
+    }
+    @media screen and (min-width: $lg) {
+        width: 1000px;
+    }
+    @media screen and (min-width: $xl) {
+        width: 1140px;
+    }
+}
+
+.flex {
+    margin-right: -15px;
+    margin-left: -15px;
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.column-inner {
+    width: 100%;
+    position: relative;
+}
+
+[class*='col-'] {
+    width: 100%;
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@for $i from 1 through $total {
+    .col-xs-#{$i}\/#{$total} {
+        width: #{$i/$total * 100%};
+    }
+    @for $j from 1 through $i {
+        .col-xs-#{$j}\/#{$i} {
+            width: #{$j/$i * 100%};
+        }
+    }
+}
+
+@media screen and (min-width: $sm) {
+    @for $i from 1 through $total {
+        .col-sm-#{$i}\/#{$total} {
+            width: #{$i/$total * 100%};
+        }
+        @for $j from 1 through $i {
+            .col-sm-#{$j}\/#{$i} {
+                width: #{$j/$i * 100%};
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $md) {
+    @for $i from 1 through $total {
+        .col-md-#{$i}\/#{$total} {
+            width: #{$i/$total * 100%};
+        }
+        @for $j from 1 through $i {
+            .col-md-#{$j}\/#{$i} {
+                width: #{$j/$i * 100%};
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $lg) {
+    @for $i from 1 through $total {
+        .col-lg-#{$i}\/#{$total} {
+            width: #{$i/$total * 100%};
+        }
+        @for $j from 1 through $i {
+            .col-lg-#{$j}\/#{$i} {
+                width: #{$j/$i * 100%};
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.pell {
+    position: relative;
+
+    // &:hover {
+    //     .pell-actionbar {
+    //         display: inline-block;
+    //     }
+    // }
+
+    &-button {
+        width: 30px;
+        height: 30px;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        background: #2b3556;
+
+        &:first-child {
+            margin-left: 5px;
+        }
+
+        &:last-child {
+            margin-right: 5px;
+        }
+    }
+
+    &-inline-actionbar {
+        z-index: 2;
+        display: none;
+        position: fixed;
+        font-size: 16px;
+        border-radius: 4px;
+        white-space: nowrap;
+        background-color: #2b3556;
+
+        &:after {
+            left: 50%;
+            content: '';
+            z-index: -1;
+            width: 14px;
+            height: 14px;
+            bottom: -6px;
+            position: absolute;
+            background: #2b3556;
+            border-radius: 2px 0 0 0;
+            transform: translateX(-50%) rotate(45deg);
+        }
+    }
+
+    &-button-selected {
+        background: rgba(255, 255, 255, 0.2);
+    }
+}

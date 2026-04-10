@@ -1,0 +1,21 @@
+<div class="toolbar-container">
+  <h3>Widgets</h3>
+  
+  <div class="widget-list">
+    <div *ngFor="let widget of widgets" 
+         cdkDrag 
+         [cdkDragData]="widget"
+         [cdkDragFreeDragPosition]="{x: 0, y: 0}" 
+         (cdkDragStarted)="onStart($event, widget)"
+         (cdkDragEnded)="onEnd()"
+         class="widget-item">
+      
+      {{ widget.label }}
+
+      <div *cdkDragPreview class="widget-preview">
+        {{ widget.label }}
+      </div>
+      
+    </div>
+  </div>
+</div>
